@@ -1,0 +1,102 @@
+.frame {
+    width: 400px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 2px;
+	box-shadow: 2px 2px 12px rgba(12, 11, 11, 0.3);
+	background-color: #da5757;
+    margin-top: -200px;
+    margin-left:-200px;
+	
+}
+
+#circlescontainer{
+	width: 220px;
+	height: 220px;
+    position: absolute;
+	top: 25%;
+	left: 25%;
+}
+
+.circle1{
+height:25px;
+width:25px;
+position:absolute;
+left:90px;
+top: 100px;
+z-index: 3;
+border-radius: 50%;
+background-color:white;
+animation-name: effect-circle1;
+animation-duration: 2s;
+animation-fill-mode: both;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+}
+
+.circle2{
+    height:50px;
+    width:50px;
+    position:absolute;
+    left:78px;
+    top: 86px;
+    z-index: 2;
+    border-radius: 50%;
+    background-color:white;
+    animation-name: effect-circle2;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    }
+
+.circle3{
+        height:75px;
+        width:75px;
+        position:absolute;
+        left:66px;
+        top: 74px;
+        z-index: 1;
+        border-radius: 50%;
+        background-color:white;
+        animation-name: effect-circle3;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        }
+
+        @keyframes effect-circle1
+        {
+            0%,65%{
+                transform:scale(0);
+                box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.1);}
+            100%{
+                transform:scale(1);
+                box-shadow: 8px 8px 15px 0 rgba(0,0,0,0.3);}
+            
+        }
+
+        @keyframes effect-circle2
+        {
+            0%,35%{
+                transform:scale(0);
+                box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.1);}
+            100%{
+                transform:scale(1);
+                box-shadow: 8px 8px 15px 0 rgba(0,0,0,0.3);}
+            
+        }
+
+        @keyframes effect-circle3
+        {
+            0%,10%{
+                transform:scale(0);
+                box-shadow: 2px 2px 4px 2px rgba(0,0,0,0.1);}
+            100%{
+                transform:scale(1);
+                box-shadow: 8px 8px 15px 0 rgba(0,0,0,0.3);}
+            
+        }
