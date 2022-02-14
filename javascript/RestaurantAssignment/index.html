@@ -9,15 +9,15 @@
             <h3 style="text-align: center;font-size: 25px">Tables</h3>
             <input type="text" id="searchtable" placeholder="Search table" onkeyup="searchTable()" >
             <div id="tablelist">
-                <div class="table" id="table1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="displayCart(this)">
+                <div class="table" id="table1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="displayCart(this.id)">
                     <p class="tablename"><b>Table 1</b></p>
                     <p class="items">Rs: <span id="bill1"></span>| Total items:<span id="items1"></span></p>
                 </div>
-                <div class="table" id="table2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="table" id="table2" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="displayCart(this.id)">
                     <p class="tablename"><b>Table 2</b></p>
                     <p class="items">Rs <span id="bill2"></span> | Total items: <span id="items2"></span></p>
                 </div>
-                <div class="table" id="table3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div class="table" id="table3" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="displayCart(this.id)">
                     <p class="tablename"><b>Table 3</b></p>
                     <p class="items">Rs <span id="bill3"></span> | Total items: <span id="items3"></span></p>
                 </div>
@@ -26,7 +26,6 @@
         <div id="menu">
             <h3 style="text-align: center;font-size: 25px">Menu</h3>
             <input type="text" id="searchmenu" placeholder="Search menu...by course, by food" onkeyup="searchMenu()" >
-        
             <div id="menulist">
                 <div class="item" id="id1" draggable="true" ondragstart="drag(event)">
                     <p class="itemname">Apple milk shake</p>
@@ -65,27 +64,27 @@
                     <p>150.00</p>
                 </div>
                 <div class="item" id="id10" draggable="true" ondragstart="drag(event)">
-                    <p class="itemname">Apple milk shake</p>
+                    <p class="itemname">Chocolate milk shake</p>
                     <p>130.00</p>
                 </div>
                 <div class="item" id="id11" draggable="true" ondragstart="drag(event)">
-                    <p class="itemname">BBQ chicken grills</p>
+                    <p class="itemname"> chicken sandwich</p>
                     <p>190.00</p>
                 </div>
                 <div class="item" id="id12" draggable="true" ondragstart="drag(event)">
-                    <p class="itemname" >Chicken Biryani</p>
+                    <p class="itemname" >Chicken manchuria</p>
                     <p>150.00</p>
                 </div>
                 <div class="item" id="id13" draggable="true" ondragstart="drag(event)">
-                    <p class="itemname">Chicken schezwan fried ricde</p>
+                    <p class="itemname">Egg Curry</p>
                     <p>110.00</p>
                 </div>
                 <div class="item" id="id14" draggable="true" ondragstart="drag(event)">
-                    <p class="itemname">Dal rice</p>
+                    <p class="itemname">Chicken curry</p>
                     <p>100.00</p>
                 </div>
                 <div class="item" id="id15" draggable="true" ondragstart="drag(event)">
-                    <p class="itemname">Egg Noodles</p>
+                    <p class="itemname">veg manchria</p>
                     <p>100.00</p>
                 </div>           
             </div>
@@ -93,41 +92,12 @@
 
 
         <div id="cartTable">
-            <div id="heading" style="background-color:blue;">Order Details</div>
-            <div id="details">
-                <table>
-                    <tr>
-                        <th>S.no</th>
-                        <th>Item</th>
-                        <th>Price</th>
-                        <th>Quantity</th>
-                    </tr>
-                    <tr>
-                        <td>hii</td>
-                        <td>hello</td>
-                        <td>hw r u</td>
-                        <td>goofd</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>hii</td>
-                        <td>hello</td>
-                        <td>hw r u</td>
-                        <td>goofd</td>
-                        
-                    </tr>
-                    <tr>
-                        <td>hii</td>
-                        <td>hello</td>
-                        <td>hw r u</td>
-                        <td>goofd</td>
-                        
-                    </tr>
-                        
-                        
-                    
-                </table>
-            </div>
+            
+        </div>
+
+
+        <div id="billTable">
+            
         </div>
 
         <script src="restaurant.js"></script>
