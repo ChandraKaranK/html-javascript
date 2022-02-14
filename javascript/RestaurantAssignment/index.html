@@ -7,86 +7,99 @@
     <body>
         <div id="tables">
             <h3 style="text-align: center;font-size: 25px">Tables</h3>
-            <input type="text" id="searchtable" placeholder="Search table" >
-            <div class="table">
-                <p class="tablename"><b>Table 1</b></p>
-                <p class="items">Rs 0 | Total items: 0</p>
-            </div>
-            <div class="table">
-                <p class="tablename"><b>Table 2</b></p>
-                <p class="items">Rs 0 | Total items: 0</p>
-            </div>
-            <div class="table">
-                <p class="tablename"><b>Table 3</b></p>
-                <p class="items">Rs 0 | Total items: 0</p>
+            <input type="text" id="searchtable" placeholder="Search table" onkeyup="searchTable()" >
+            <div id="tablelist">
+                <div class="table" id="table1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="displayCart(this.id)">
+                    <p class="tablename"><b>Table 1</b></p>
+                    <p class="items">Rs: <span id="bill1"></span>| Total items:<span id="items1"></span></p>
+                </div>
+                <div class="table" id="table2" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="displayCart(this.id)">
+                    <p class="tablename"><b>Table 2</b></p>
+                    <p class="items">Rs <span id="bill2"></span> | Total items: <span id="items2"></span></p>
+                </div>
+                <div class="table" id="table3" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="displayCart(this.id)">
+                    <p class="tablename"><b>Table 3</b></p>
+                    <p class="items">Rs <span id="bill3"></span> | Total items: <span id="items3"></span></p>
+                </div>
             </div>
         </div>
         <div id="menu">
             <h3 style="text-align: center;font-size: 25px">Menu</h3>
-            <input type="text" id="searchmenu" placeholder="Search menu...by course, by food" >
-        
+            <input type="text" id="searchmenu" placeholder="Search menu...by course, by food" onkeyup="searchMenu()" >
             <div id="menulist">
-                <div class="item">
+                <div class="item" id="id1" draggable="true" ondragstart="drag(event)">
                     <p class="itemname">Apple milk shake</p>
                     <p>130.00</p>
                 </div>
-                <div class="item">
-                    <p class="itemname">BBQ chicken grills</p>
+                <div class="item" id="id2" draggable="true" ondragstart="drag(event)">
+                    <p class="itemname">BBQ chicken tikka</p>
                     <p>190.00</p>
                 </div>
-                <div class="item">
+                <div class="item" id="id3" draggable="true" ondragstart="drag(event)">
                     <p class="itemname">Chicken Biryani</p>
                     <p>150.00</p>
                 </div>
-                <div class="item">
+                <div class="item" id="id4" draggable="true" ondragstart="drag(event)">
                     <p class="itemname">Chicken schezwan fried rice</p>
                     <p>110.00</p>
                 </div>
-                <div class="item">
+                <div class="item" id="id5" draggable="true" ondragstart="drag(event)">
                     <p class="itemname">Dal rice</p>
                     <p>100.00</p>
                 </div>
-                <div class="item">
+                <div class="item" id="id6" draggable="true" ondragstart="drag(event)">
                     <p class="itemname">Egg Noodles</p>
                     <p>100.00</p>
                 </div>
-                <div class="item">
+                <div class="item" id="id7" draggable="true" ondragstart="drag(event)">
                     <p class="itemname">Fish biryani</p>
                     <p>250.00</p>
                 </div>
-                <div class="item">
+                <div class="item" id="id8" draggable="true" ondragstart="drag(event)">
                     <p class="itemname">Special milkshake</p>
                     <p>180.00</p>
                 </div>
-                <div class="item">
+                <div class="item" id="id9" draggable="true" ondragstart="drag(event)">
                     <p class="itemname">Samoli Chicken Shawarma</p>
                     <p>150.00</p>
                 </div>
-                <div class="item">
-                    <p class="itemname">Apple milk shake</p>
+                <div class="item" id="id10" draggable="true" ondragstart="drag(event)">
+                    <p class="itemname">Chocolate milk shake</p>
                     <p>130.00</p>
                 </div>
-                <div class="item">
-                    <p class="itemname">BBQ chicken grills</p>
+                <div class="item" id="id11" draggable="true" ondragstart="drag(event)">
+                    <p class="itemname"> chicken sandwich</p>
                     <p>190.00</p>
                 </div>
-                <div class="item">
-                    <p class="itemname">Chicken Biryani</p>
+                <div class="item" id="id12" draggable="true" ondragstart="drag(event)">
+                    <p class="itemname" >Chicken manchuria</p>
                     <p>150.00</p>
                 </div>
-                <div class="item">
-                    <p class="itemname">Chicken schezwan fried ricde</p>
+                <div class="item" id="id13" draggable="true" ondragstart="drag(event)">
+                    <p class="itemname">Egg Curry</p>
                     <p>110.00</p>
                 </div>
-                <div class="item">
-                    <p class="itemname">Dal rice</p>
+                <div class="item" id="id14" draggable="true" ondragstart="drag(event)">
+                    <p class="itemname">Chicken curry</p>
                     <p>100.00</p>
                 </div>
-                <div class="item">
-                    <p class="itemname">Egg Noodles</p>
+                <div class="item" id="id15" draggable="true" ondragstart="drag(event)">
+                    <p class="itemname">veg manchria</p>
                     <p>100.00</p>
                 </div>           
             </div>
         </div>
+
+
+        <div id="cartTable">
+            
+        </div>
+
+
+        <div id="billTable">
+            
+        </div>
+
+        <script src="restaurant.js"></script>
     </body>
 </html>

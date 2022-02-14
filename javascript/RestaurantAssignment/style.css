@@ -6,25 +6,24 @@
     width:25%;
     height:100%;
     float:left;
-    border: 1px solid red;
     padding:15px;
+    position:fixed;
 }
 
 #menu{
     margin-left:25%;
-    border:2px solid green;
+    
     height:100%;
     padding:15px;
 }
 
 body{
-    border:1px solid black;
     height:100%;
 }
 
 
 div.table,div.item{
-    height:15%;
+    height:150px;
     border:1px solid rgb(211, 208, 208);
     border-bottom: 3px solid rgb(158, 150, 150);
     margin-top:15px;
@@ -48,3 +47,63 @@ p.tablename,p.itemname{
     padding:10px;
     width:70%;
 }
+
+#cartTable,#billTable{
+    position:absolute;
+    z-index:2;
+    left:30%;
+    top:25%;
+    border:1px solid green;
+    background-color: beige;
+}
+
+#details{
+    padding:20px;
+}
+
+#heading{
+    font-size:20px;
+    color:white;
+    background-color:rgb(77, 77, 235);
+    height:50px;
+    padding-top:8px;
+    padding-left:14px;
+    padding-bottom:2px;
+
+}
+
+td,th{
+    font-size:20px;
+    padding:30px;
+}
+
+table{
+    width:100%;
+}
+
+#close{
+    font-size:20;
+    margin-left:85%;
+    cursor:pointer;
+}
+
+img{
+    height:20px;
+    width:20px;
+    cursor: pointer;
+}
+
+#submit{
+    font-size: 25px;
+    border:2px solid teal;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: green;
+}
+
+#bill 
+
+
+
